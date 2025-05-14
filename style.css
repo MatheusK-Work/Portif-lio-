@@ -160,7 +160,7 @@ section {
     box-shadow: 0 0 25px var(--main-color);
     border-radius: 4rem;
     font-size: 1.8rem;
-    color: rgb(255, 0, 0);
+    color: rgb(116, 242, 32);
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 1500;
@@ -199,23 +199,26 @@ section {
 .home-img {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .home-img img {
-    max-width: 300px;
+    max-width: 150%;
+    width: 300px;
     height: auto;
-    border-radius: 10%;
-    box-shadow: 0 0 100px var(--main-color);
+    border-radius: 232px;
+    box-shadow: 0 0 40px var(--main-color);
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-img img:hover {
-    box-shadow: 0 0 85px var(--main-color),
-                0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 60px var(--main-color),
+                0 0 40px var(--main-color),
+                0 0 80px var(--main-color);
 }
 
 .text-animation {
